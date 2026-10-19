@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="styleco.css">
+<link rel="stylesheet" href="menu.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>アクセス</title>
+</head>
+
+<body>
+
+ <header>
+
+        <h1 class="logo">アクセス</h1>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <a href="index.html">ホーム</a>
+            <a href="research.html">西山の棚田</a>
+            <a href="history.html">西山の歴史</a>
+            <a href="gallery.html">まるにしマップ</a>
+            <a href="contact.html">アクセス</a>
+        </nav>
+
+    </header>
+
+<main>
+
+    <div class="popup">
+
+        <p>
+            【所在地】
+        </p>
+
+        <p>
+            三重県伊賀市西山2594
+        </p>
+
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.2678783732376!2d136.07686469565277!3d34.79301065775292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60015b004421ab01%3A0xa0fa33f056bab817!2z6KW_5bGx44Gu5qOa55Sw!5e0!3m2!1sja!2sjp!4v1788949042449!5m2!1sja!2sjp"
+             width="600" 
+             height="450" 
+             style="border:0;" 
+             allowfullscreen="" 
+             loading="lazy" 
+             referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+
+        <p>
+            【交通アクセス】
+        </p>
+
+        <p>
+            名阪国道　伊賀一ノ宮ICから車で約20分
+        </p>
+
+        <p>
+            名阪国道大内ICから来るまで約15分
+        </p>
+
+        <p>
+            新名神信楽ICまたは甲南ICから車で約30分
+        </p>
+
+        <p>
+            伊賀鉄道上野市駅(忍者市駅)からバスで約20分
+        </p>
+        <p>
+            JR関西本線伊賀上野駅、伊賀鉄道伊賀上野駅から車で約10分
+        </p>
+
+    </div>
+</main>
+
+    <script>
+        function toggleMenu() {
+
+            document
+                .getElementById("menu")
+                .classList
+                .toggle("show");
+
+        }
+    </script>
+
+</body>
+
+</html>

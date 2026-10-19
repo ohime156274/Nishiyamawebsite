@@ -1,0 +1,57 @@
+body{
+    min-height:100vh;
+
+    background-image: url("image/history.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+
+
+}
+
+
+
+h1{
+
+    color: blue;
+
+    font-size: 40px;
+
+}
+
+.popup{
+
+    background-color:rgba(255,255,255,0.85);
+
+    width:80%;
+    max-width:1000px;
+
+    margin:50px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-sizing:border-box;
+
+    color:black;
+
+}
+
+@media(max-width:768px){
+
+    .popup{
+
+        width:90%;
+
+        padding:20px;
+
+        margin:30px auto;
+
+    }
+
+}

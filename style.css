@@ -1,0 +1,101 @@
+body{
+    min-height:100vh;
+
+    background-image: url("image/home.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+
+
+}
+h1{
+
+    color: blue;
+
+    font-size: 40px;
+
+}
+
+.popup{
+
+    background-color:rgba(255,255,255,0.85);
+
+    width:80%;
+    max-width:1000px;
+
+    margin:50px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-sizing:border-box;
+
+    color:black;
+
+}
+
+@media(max-width:768px){
+
+    .popup{
+
+        width:90%;
+
+        padding:20px;
+
+        margin:30px auto;
+
+    }
+
+}
+
+/* 横に流れる写真エリア */
+.photo-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: -30px;
+}
+
+/* 写真を横一列に並べる */
+.photo-track {
+    display: flex;
+    width: max-content;
+    animation: photo-flow 35s linear infinite;
+}
+
+/* 写真の大きさ */
+.photo-track img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+/* 右から左へ流す */
+@keyframes photo-flow {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .photo-track img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .photo-track {
+        animation-duration: 25s;
+    }
+}

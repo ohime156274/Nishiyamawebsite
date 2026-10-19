@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="stylega.css">
+<link rel="stylesheet" href="menu.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>まるにしマップ</title>
+</head>
+
+<body>
+
+<header>
+
+    <h1 class="logo">まるにしマップ</h1>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav id="menu">
+        <a href="index.html">ホーム</a>
+        <a href="research.html">西山の棚田</a>
+        <a href="history.html">西山の歴史</a>
+        <a href="gallery.html">まるにしマップ</a>
+        <a href="contact.html">アクセス</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="popup">
+
+        <h2>まるにしマップ</h2>
+
+        <p>
+            【まるにしマップと写真はこちら！】
+        </p>
+
+        <p>
+            　西山で見つけた生き物をマップ上から見ることができます！
+        </p>
+
+        <a href="https://ikimonomap08.github.io/ikimap/map.html"
+           target="_blank"
+           rel="noopener"
+           class="web-link">
+            まるにしマップを開く
+        </a>
+
+    </div>
+
+</main>
+
+<script>
+    function toggleMenu() {
+
+        document
+            .getElementById("menu")
+            .classList
+            .toggle("show");
+
+    }
+</script>
+
+</body>
+</html>

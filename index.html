@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="menu.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ホーム</title>
+</head>
+
+<body>
+
+ <header>
+
+        <h1 class="logo">ホーム</h1>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <a href="index.html">ホーム</a>
+            <a href="research.html">西山の棚田</a>
+            <a href="history.html">西山の歴史</a>
+            <a href="gallery.html">まるにしマップ</a>
+            <a href="contact.html">アクセス</a>
+        </nav>
+
+    </header>
+
+    <!-- 横に流れる写真エリア -->
+<div class="photo-slider">
+    <div class="photo-track">
+
+        <img src="image/PXL_20260925_020553803.MP.jpg" alt="西山の風景">
+        <img src="image/PXL_20260925_015729674.jpg" alt="棚田の風景">
+        <img src="image/nishiyama2.jpg" alt="棚田の風景">
+        <img src="image/PXL_20260925_031628537.jpg" alt="棚田の風景">
+
+        <!-- 途切れず流れるように写真を繰り返す -->
+        <img src="image/PXL_20260925_020553803.MP.jpg" alt="">
+        <img src="image/PXL_20260925_015729674.jpg" alt="">
+        <img src="image/nishiyama2.jpg" alt="">
+        <img src="image/PXL_20260925_031628537.jpg" alt="">
+
+    </div>
+</div>
+
+    <main>
+
+    <div class="popup">
+
+        <h2>伊賀西山の棚田</h2>
+
+        <p>
+            伊賀西山の棚田について紹介します。
+            ここに長めの文章を書いていきます。
+        </p>
+
+        <p>
+            西山の棚田は、地域の農業や景観を支えてきた
+            大切な場所です。
+        </p>
+
+        <p>
+            ここにさらに文章を追加していくことができます。
+        </p>
+
+    </div>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+
+            document
+                .getElementById("menu")
+                .classList
+                .toggle("show");
+
+        }
+    </script>
+
+</body>
+
+</html>
