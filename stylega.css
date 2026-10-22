@@ -57,3 +57,50 @@ h1{
     }
 
 }
+
+/* 横に流れる写真エリア */
+.photo-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: -30px;
+}
+
+/* 写真を横一列に並べる */
+.photo-track {
+    display: flex;
+    width: max-content;
+    animation: photo-flow 120s linear infinite;
+}
+
+/* 写真の大きさ */
+.photo-track img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+/* 右から左へ流す */
+@keyframes photo-flow {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .photo-track img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .photo-track {
+        animation-duration: 100s;
+    }
+}
