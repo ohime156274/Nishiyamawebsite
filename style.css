@@ -65,7 +65,7 @@ h1{
 .photo-track {
     display: flex;
     width: max-content;
-    animation: photo-flow 80s linear infinite;
+    animation: photo-flow 90s linear infinite;
 }
 
 /* 写真の大きさ */
@@ -96,6 +96,6 @@ h1{
     }
 
     .photo-track {
-        animation-duration: 60s;
+        animation-duration: 70s;
     }
 }
